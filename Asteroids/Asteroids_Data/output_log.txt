@@ -1,0 +1,64 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon (TM) R9 200 Series (ID=0x6811)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.134 seconds
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 60Hz; virtual: 3360x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'Quad') is missing!
+ 
+(Filename:  Line: 1655)
+
+UnloadTime: 1.174812 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.594947 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 0.294974 ms (FindLiveObjects: 0.041859 ms CreateObjectMapping: 0.019951 ms MarkObjects: 0.220644 ms  DeleteObjects: 0.011345 ms)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing!
+ 
+(Filename:  Line: 1655)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.654499 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 195.
+Total: 0.337225 ms (FindLiveObjects: 0.027776 ms CreateObjectMapping: 0.014474 ms MarkObjects: 0.243725 ms  DeleteObjects: 0.050466 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.653716 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 0.266024 ms (FindLiveObjects: 0.035600 ms CreateObjectMapping: 0.014474 ms MarkObjects: 0.202648 ms  DeleteObjects: 0.012127 ms)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing!
+ 
+(Filename:  Line: 1655)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.602859 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 195.
+Total: 0.334095 ms (FindLiveObjects: 0.028167 ms CreateObjectMapping: 0.014083 ms MarkObjects: 0.240595 ms  DeleteObjects: 0.050075 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 228a0 -> priority: 1 
