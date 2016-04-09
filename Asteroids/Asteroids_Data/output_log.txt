@@ -16,7 +16,7 @@ Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Manag
 Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.134 seconds
+- Completed reload, in  0.113 seconds
 Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\DankessS\workspace\GK\Asteroids\Asteroids_Data\Managed\System.dll (this message is harmless)
 desktop: 1680x1050 60Hz; virtual: 3360x1050 at 0,0
@@ -27,38 +27,38 @@ The referenced script on this Behaviour (Game Object 'Quad') is missing!
  
 (Filename:  Line: 1655)
 
-UnloadTime: 1.174812 ms
+UnloadTime: 0.899398 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.594947 ms
+UnloadTime: 8.195127 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.294974 ms (FindLiveObjects: 0.041859 ms CreateObjectMapping: 0.019951 ms MarkObjects: 0.220644 ms  DeleteObjects: 0.011345 ms)
+Total: 0.273066 ms (FindLiveObjects: 0.040686 ms CreateObjectMapping: 0.016822 ms MarkObjects: 0.202257 ms  DeleteObjects: 0.011345 ms)
 
 The referenced script on this Behaviour (Game Object 'Quad') is missing!
  
 (Filename:  Line: 1655)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.654499 ms
+UnloadTime: 0.556695 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 195.
-Total: 0.337225 ms (FindLiveObjects: 0.027776 ms CreateObjectMapping: 0.014474 ms MarkObjects: 0.243725 ms  DeleteObjects: 0.050466 ms)
+Total: 0.349744 ms (FindLiveObjects: 0.031297 ms CreateObjectMapping: 0.014866 ms MarkObjects: 0.252723 ms  DeleteObjects: 0.049684 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.653716 ms
+UnloadTime: 0.991724 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.266024 ms (FindLiveObjects: 0.035600 ms CreateObjectMapping: 0.014474 ms MarkObjects: 0.202648 ms  DeleteObjects: 0.012127 ms)
+Total: 0.329792 ms (FindLiveObjects: 0.042642 ms CreateObjectMapping: 0.015257 ms MarkObjects: 0.258200 ms  DeleteObjects: 0.012518 ms)
 
 The referenced script on this Behaviour (Game Object 'Quad') is missing!
  
 (Filename:  Line: 1655)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.602859 ms
+UnloadTime: 0.524225 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 195.
-Total: 0.334095 ms (FindLiveObjects: 0.028167 ms CreateObjectMapping: 0.014083 ms MarkObjects: 0.240595 ms  DeleteObjects: 0.050075 ms)
+Total: 0.336443 ms (FindLiveObjects: 0.029340 ms CreateObjectMapping: 0.014474 ms MarkObjects: 0.240987 ms  DeleteObjects: 0.050466 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 228a0 -> priority: 1 
+  Thread -> id: 2300c -> priority: 1 

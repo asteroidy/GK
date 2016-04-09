@@ -15,7 +15,7 @@ public class Menu : MonoBehaviour {
         CheckIsButtonPushed();
     }
 
-    public void StartGame()
+    public void ResumeGame()
     {
         Application.LoadLevel(1);
     }

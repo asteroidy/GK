@@ -233,7 +233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 593409678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a097af5cfd66546a2e2aa007d109b2, type: 3}
+  m_Script: {fileID: 11500000, guid: e8c75d3f500421741ab6a786951c249f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &593409680
@@ -324,6 +324,7 @@ GameObject:
   - 64: {fileID: 675867598}
   - 23: {fileID: 675867597}
   - 114: {fileID: 675867596}
+  - 114: {fileID: 675867601}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -399,6 +400,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &675867601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675867595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c75d3f500421741ab6a786951c249f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &739239444
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +646,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 593409679}
-        m_MethodName: StartGame
+        m_MethodName: ResumeGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
