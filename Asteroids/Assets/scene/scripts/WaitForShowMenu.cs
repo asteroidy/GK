@@ -17,6 +17,7 @@ public class WaitForShowMenu : MonoBehaviour {
     {
         if (Input.GetButton("ShowMenu"))
         {
+            StateSingleton.Instance.gameTime.Stop();
             Application.LoadLevel(2);
         }
     }

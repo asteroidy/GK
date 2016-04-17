@@ -29,6 +29,7 @@ public class Menu : MonoBehaviour {
     {
         if (Input.GetButton("ShowMenu"))
         {
+            StateSingleton.Instance.gameTime.Start();
             Application.LoadLevel(1);
         }
     }

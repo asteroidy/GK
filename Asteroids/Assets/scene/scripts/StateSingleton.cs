@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Diagnostics;
 
 public class StateSingleton : MonoBehaviour
 {
     public static StateSingleton Instance;
-    public int currentTimeOfGame;
+    public Stopwatch gameTime = new Stopwatch();
     void Awake()
     {
         if (Instance == null)
