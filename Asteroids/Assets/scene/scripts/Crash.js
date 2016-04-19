@@ -2,7 +2,6 @@
 
 function OnTriggerEnter(other : Collider){
 	if(other.tag == "Player"){
-		//doSomething or
-		Application.LoadLevel(3);
+		Application.LoadLevel("GameResult");
 	}
 }
