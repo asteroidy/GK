@@ -104,8 +104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 157074, guid: e94f71b8fad8f124e9bab92ca6166960, type: 2}
+  - {fileID: 0}
   - {fileID: 183550, guid: cded5d3e09ba668418109b703dfe9b50, type: 2}
+  - {fileID: 0}
   spawnMin: 1
   spawnMax: 2
 --- !u!1001 &100100000
