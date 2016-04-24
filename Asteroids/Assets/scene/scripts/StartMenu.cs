@@ -5,7 +5,6 @@ using System.Diagnostics;
 
 public class StartMenu : MonoBehaviour {
 
-
 	// Use this for initialization
 	void Start () {
         StateSingleton.Instance.gameTime.Reset();

@@ -6,6 +6,7 @@ public class StateSingleton : MonoBehaviour
 {
     public static StateSingleton Instance;
     public Stopwatch gameTime = new Stopwatch();
+    public Vector3 shipPosition;
     void Awake()
     {
         if (Instance == null)

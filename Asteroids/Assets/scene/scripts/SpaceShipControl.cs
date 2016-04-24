@@ -3,11 +3,10 @@ using System.Collections;
 
 public class SpaceShipControl : MonoBehaviour {
 
-    GameObject spaceShip;
-
+    public static Vector3 currentPosition;
 	// Use this for initialization
 	void Start () {
-	    
+        transform.position = StateSingleton.Instance.shipPosition;
 	}
 	
 	// Update is called once per frame
@@ -17,7 +16,6 @@ public class SpaceShipControl : MonoBehaviour {
 
     public void checkDirectionOfMove()
     {
-        Vector3 currentPosition;
         if (Input.GetKey("a"))
         {
             currentPosition = (getPos().x < -10.58 ?  getPos() : Vector3.MoveTowards(transform.position,transform.position + new Vector3(-1,0,0),0.25f));
@@ -46,6 +44,7 @@ public class SpaceShipControl : MonoBehaviour {
 
     private void setPos(Vector3 currentPosition)
     {
+        StateSingleton.Instance.shipPosition = transform.position;
         transform.position = currentPosition;
     }
 }

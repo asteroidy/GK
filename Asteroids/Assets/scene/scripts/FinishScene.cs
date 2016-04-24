@@ -5,11 +5,11 @@ using System.Diagnostics;
 
 public class FinishScene : MonoBehaviour {
 
-    private GUIStyle style;
+    private GUIStyle style = new GUIStyle();
 
 	// Use this for initialization
 	void Start () {
-        
+        StateSingleton.Instance.shipPosition = new Vector3(0, 0, 0);
 	}
 	
 	// Update is called once per frame
@@ -19,12 +19,12 @@ public class FinishScene : MonoBehaviour {
 
     void OnGUI()
     {
-        style = new GUIStyle();
-        style.fontSize = 5;
-        style.fontStyle = FontStyle.Normal;
+        style.normal.textColor = Color.magenta;
+        style.fontSize = 32;
+        
         StateSingleton.Instance.gameTime.Stop();
         Stopwatch finalScore = StateSingleton.Instance.gameTime;
-        TimeSpan ts = finalScore.Elapsed;
-        GUI.Label(new Rect(780f, 465f, 300f, 200f), "Congratulation!\n Your score is " + (ts.TotalMilliseconds / 1000).ToString() + " seconds!");
+        Double ts = Math.Round(finalScore.Elapsed.TotalSeconds,2);
+        GUI.Box( new Rect(640f,450f,300f,200f), "          Congratulation!\n Your score is " + ts.ToString() + " seconds!",style); // should be centered. 
     }
 }
