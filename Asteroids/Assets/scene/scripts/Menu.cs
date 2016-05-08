@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Menu : MonoBehaviour {
+public class Menu : MonoBehaviour
+{
 
     // Use this for initialization
     void Start()
@@ -12,25 +13,29 @@ public class Menu : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        CheckIsButtonPushed();
+        //CheckIsButtonPushed();
     }
 
     public void ResumeGame()
     {
-        Application.LoadLevel(1);
+        Time.timeScale = 1;
+        StateSingleton.Instance.setPaused(false);
+        StateSingleton.Instance.gameTime.Start();
+        Application.UnloadLevel(2);
     }
 
     public void EndGame()
     {
+        StateSingleton.Instance.setPaused(false);
+        Time.timeScale = 1;
         Application.LoadLevel(0);
     }
 
     public void CheckIsButtonPushed()
     {
-        if (Input.GetButton("ShowMenu"))
+        if (Input.GetButtonUp("ShowMenu"))
         {
-            StateSingleton.Instance.gameTime.Start();
-            Application.LoadLevel(1);
+            ResumeGame();
         }
     }
 }

@@ -11,8 +11,11 @@ public class SpaceShipControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        checkDirectionOfMove();
-	}
+        if (!StateSingleton.Instance.isPaused())
+        {
+            checkDirectionOfMove();
+        }
+    }
 
     public void checkDirectionOfMove()
     {
