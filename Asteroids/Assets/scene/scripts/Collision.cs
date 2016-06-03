@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections;
 
 public class Collision : MonoBehaviour
 {
+    float delayTime = 0.5f;
+
     void Update()
     {
         foreach (GameObject asteroid in Spawner.asteroids)
@@ -11,14 +14,31 @@ public class Collision : MonoBehaviour
             {
                 if (checkColision(asteroid))
                 {
+
                     //Destroy(gameObject);
-                    Spawner.asteroids.Clear();
-                    Application.LoadLevel("GameResult");
+                    //gameObject.SetActive(false);
+                    transform.localScale = new Vector3(0f, 0f, 0f);
+                    ParticleSpawner.boom = true;
+
+                    if (delayTime < 0)
+                    {
+                        Spawner.asteroids.Clear();
+                        Application.LoadLevel("GameResult");
+                        ParticleSpawner.boom = false;
+                    }
+                    delayTime -= Time.deltaTime;
                     break;
                 }
             }
 
         }
+    }
+
+    IEnumerator MyMethod()
+    {
+        Debug.Log("Before Waiting 2 seconds");
+        yield return new WaitForSeconds(1000000);
+        Debug.Log("After Waiting 2 Seconds");
     }
 
     bool checkColision(GameObject asteroid)
