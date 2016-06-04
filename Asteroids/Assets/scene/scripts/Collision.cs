@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Collision : MonoBehaviour
 {
-    float delayTime = 0.5f;
+    float delayTime = 0.8f;
 
     void Update()
     {
@@ -14,7 +14,7 @@ public class Collision : MonoBehaviour
             {
                 if (checkColision(asteroid))
                 {
-
+                    StateSingleton.Instance.shouldRotateCamera = true;
                     //Destroy(gameObject);
                     //gameObject.SetActive(false);
                     transform.localScale = new Vector3(0f, 0f, 0f);
@@ -22,6 +22,7 @@ public class Collision : MonoBehaviour
 
                     if (delayTime < 0)
                     {
+                        StateSingleton.Instance.shouldRotateCamera = false;
                         Spawner.asteroids.Clear();
                         Application.LoadLevel("GameResult");
                         ParticleSpawner.boom = false;

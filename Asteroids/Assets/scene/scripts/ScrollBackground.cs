@@ -15,7 +15,7 @@ public class ScrollBackground : MonoBehaviour
     {
         MeshRenderer mr = GetComponent<MeshRenderer>();
         Material material = mr.material;
-        Vector2 offset = material.mainTextureOffset;
+        Vector3 offset = material.mainTextureOffset;
         offset.y += 0.006f;
         material.mainTextureOffset = offset;
     }

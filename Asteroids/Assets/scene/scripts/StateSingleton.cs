@@ -8,7 +8,7 @@ public class StateSingleton : MonoBehaviour
     public static StateSingleton Instance;
     public Stopwatch gameTime = new Stopwatch();
     public Vector3 shipPosition;
-
+    public bool shouldRotateCamera = false;
     public bool isPaused()
     {
         return paused;
