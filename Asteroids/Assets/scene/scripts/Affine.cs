@@ -4,21 +4,22 @@ using System.Collections;
 public class Affine : MonoBehaviour
 {
     public Transform ship;
-
+    private Quaternion rotation;
+    private Quaternion current;
     void Start()
     {
-
+      
     }
 
     void Update()
     {
         if (StateSingleton.Instance.shouldRotateCamera)
         {
-            Vector3 relativePos = (ship.position + new Vector3(0f, 1.5f, 0f)) - transform.position;
-            Quaternion rotation = Quaternion.LookRotation(relativePos);
-            Quaternion current = transform.localRotation;
+            Vector3 relativePos = (new Vector3(1.0f, 0.0f, 0.0f)) - transform.position;
+            rotation = Quaternion.LookRotation(relativePos);
+            current = transform.localRotation;
             transform.localRotation = Quaternion.Slerp(current, rotation, Time.deltaTime);
-            transform.Translate(0, 0, 5 * Time.deltaTime);
+            transform.Translate(0, 0, 8 * Time.deltaTime);
         }
     }
 }

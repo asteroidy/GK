@@ -4,9 +4,15 @@ using System.Collections;
 public class SpaceShipControl : MonoBehaviour {
 
     public static Vector3 currentPosition;
+    private float verticalSize;
+    private float horizontallSize;
 	// Use this for initialization
 	void Start () {
         transform.position = StateSingleton.Instance.shipPosition;
+        verticalSize = Camera.main.orthographicSize;
+        horizontallSize = verticalSize * Screen.width / Screen.height;
+        Debug.LogWarning("Size vert is: " + verticalSize);
+        Debug.LogWarning("Size horz is: " + horizontallSize);
 	}
 	
 	// Update is called once per frame
@@ -21,7 +27,7 @@ public class SpaceShipControl : MonoBehaviour {
     {
         if (Input.GetKey("a"))
         {
-            currentPosition = (getPos().x < -10.58 ?  getPos() : Vector3.MoveTowards(transform.position,transform.position + new Vector3(-1,0,0),0.25f));
+            currentPosition = (getPos().x < -16.58 ?  getPos() : Vector3.MoveTowards(transform.position,transform.position + new Vector3(-1,0,0),0.25f));
             setPos(currentPosition);
         }
         if (Input.GetKey("w"))
@@ -36,7 +42,7 @@ public class SpaceShipControl : MonoBehaviour {
         }
         if (Input.GetKey("d"))
         {
-            currentPosition = (getPos().x > 10.7 ? getPos() : Vector3.MoveTowards(transform.position, transform.position + new Vector3(1, 0, 0), 0.25f));
+            currentPosition = (getPos().x > 16.7 ? getPos() : Vector3.MoveTowards(transform.position, transform.position + new Vector3(1, 0, 0), 0.25f));
             setPos(currentPosition);
         }
     }
